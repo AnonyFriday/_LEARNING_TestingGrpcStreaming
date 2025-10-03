@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+service Calculator {
+  // Client streaming RPC
+  rpc AddStream (stream AddRequest) returns (AddResponse);
+}
+
+message AddRequest {
+  uint32 number = 1;
+}
+
+message AddResponse {
+  uint32 result = 1;
+}
