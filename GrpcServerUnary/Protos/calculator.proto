@@ -1,0 +1,14 @@
+﻿syntax = "proto3";
+
+service Calculator {
+  rpc Add (AddRequest) returns (AddResponse);
+}
+
+message AddRequest {
+  repeated uint32 list = 1;
+  uint32 count = 2;
+}
+
+message AddResponse {
+  uint32 result = 1;
+}
