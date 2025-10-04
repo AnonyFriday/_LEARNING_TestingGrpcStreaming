@@ -1,7 +1,5 @@
 <Solution>
   <Folder Name="/Solution Items/" />
-  <Project Path="GrpcClientClientStreaming/GrpcClientClientStreaming.csproj" Id="be92acba-93f0-46ef-9c4f-d29572c051d6" />
-  <Project Path="GrpcClientUnary/GrpcClientUnary.csproj" />
-  <Project Path="GrpcServerClientStreaming/GrpcServerClientStreaming.csproj" Id="fa62f4af-45a4-407c-8b53-1ebe612f4bf5" />
-  <Project Path="GrpcServerUnary/GrpcServerUnary.csproj" />
+  <Project Path="GrpcClientBidrectional/GrpcClientBidrectional.csproj" />
+  <Project Path="GrpcServerBidirectional/GrpcServerBidirectional.csproj" />
 </Solution>

@@ -16,7 +16,7 @@ namespace GrpcServerClientStreaming.Services
             }
 
             // return the final sum
-            Console.WriteLine($"Final sum: {sum}");
+            Console.WriteLine($"Final sum: {sum}, Received from Client: {context.Peer}");
             return new AddResponse { Result = sum };
         }
     }

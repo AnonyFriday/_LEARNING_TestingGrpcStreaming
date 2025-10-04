@@ -1,0 +1,23 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "AnonyFriday";
+import "google/protobuf/timestamp.proto";
+
+service ChatService {
+    rpc LiveChatting (stream ChatMessage) returns (stream ChatMessage);
+}
+
+message ChatMessage {
+    enum MessageType {
+        UNKNOWN = 0;           
+        USER_MESSAGE = 1;
+        SERVER_MESSAGE = 2;
+        JOIN_SIGNAL = 3;
+        FILE_TRANSFER = 4;
+    }
+
+    MessageType type = 1;
+    string username = 2;
+    string content = 3; // message or the initial roomcode
+    google.protobuf.Timestamp timestamp = 4;
+}

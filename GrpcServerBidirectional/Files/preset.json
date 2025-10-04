@@ -1,0 +1,56 @@
+{
+  "mapCode": 1,
+  "locations": [
+    {
+      "locationCode": 1,
+      "mapObject": {
+        "objectCode": "bottle-plastic",
+        "activityType": {
+          "activityCode": "grab",
+          "taskDescription": "(Grab) Plastic Bottle"
+        }
+      }
+    },
+    {
+      "locationCode": 2,
+      "mapObject": {
+        "objectCode": "house-village",
+        "activityType": {
+          "activityCode": "quiz",
+          "taskDescription": "(Quiz) Village House",
+          "config": {
+            "question": "What is the capital of France?",
+            "answers": [
+              {
+                "text": "Berlin",
+                "isCorrect": false
+              },
+              {
+                "text": "Paris",
+                "isCorrect": true
+              },
+              {
+                "text": "Madrid",
+                "isCorrect": false
+              },
+              {
+                "text": "Rome",
+                "isCorrect": false
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "locationCode": 3,
+      "mapObject": {
+        "objectCode": "statue-ancient",
+        "activityType": {
+          "activityCode": "info",
+          "taskDescription": "(Info) Ancient Statue"
+        }
+      }
+    }
+  ]
+}
